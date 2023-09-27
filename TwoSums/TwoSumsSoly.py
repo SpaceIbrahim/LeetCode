@@ -1,15 +1,15 @@
 
 def twoSum(nums, target):
-    map = {}
-    output = []
-    for i in range(0, len(nums)):
-        
-        if (target - nums[i]) in map.values():
-            
-            output = [i, list(map.values()).index(target - nums[i])]
-        else:
-            map[i] = nums[i]
-    return output
+        map = {}
+        output = []
+        for i in range(0, len(nums)):
+            sum = target - nums[i]
+            if sum in map:
+                
+                output = [i, map[sum]]
+            else:
+                map[nums[i]] = i
+        return output
 
 def main(args=None):
     nums = [2,7,11,15]
