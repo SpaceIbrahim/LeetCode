@@ -1,7 +1,7 @@
 
 def kelements(nums, k):
         map = {}
-        freq = [[] for i in range(nums)+1]
+        freq = [ [ 0 for i in range(len(nums)) ] for j in range(len(nums)) ]
         output = []
         for i in nums:
             if i not in map:
@@ -9,12 +9,10 @@ def kelements(nums, k):
             else:
                 map[i] +=1
         
-        for i in map:
-             freq.append(map[i])
-        
-        freq.sort(reverse=True)
-        print(map)
+        for k in map:
+             freq[map[k]] = k
 
+        print(freq)
         for _ in range(k):
             output.append(map[freq[_]])
         return output
