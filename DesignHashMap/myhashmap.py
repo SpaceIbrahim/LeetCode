@@ -9,7 +9,8 @@ class MyHashMap(object):
         :type value: int
         :rtype: None
         """
-        self.map.append()
+        self.map.append([key, value])
+        print(self.map)
         
 
     def get(self, key):
