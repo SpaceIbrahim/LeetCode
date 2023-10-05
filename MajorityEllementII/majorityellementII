@@ -18,7 +18,7 @@ def majorityellementII(nums):
         return output
 
 def main(args=None):
-    nums = [3,2,3]
+    nums = [3,2]
     output = majorityellementII(nums)
 
     print(output)
