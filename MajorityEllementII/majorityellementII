@@ -1,0 +1,25 @@
+
+def majorityellementII(nums):
+        output = []
+        map = {}
+        n = (int)(len(nums)/3)
+        print(n)
+
+        for i in nums:
+            if i in map:
+                map[i] += 1
+            else:
+                map[i] = 1
+
+        print(map)
+        return output
+
+def main(args=None):
+    nums = [3,2,3]
+    output = majorityellementII(nums)
+
+    print(output)
+
+if __name__ == '__main__':
+    main()
+        
