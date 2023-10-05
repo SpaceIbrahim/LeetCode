@@ -11,7 +11,10 @@ def majorityellementII(nums):
             else:
                 map[i] = 1
 
-        print(map)
+        for i in nums:
+            if map[i] > n:
+                 if i not in output:
+                    output.append(i)
         return output
 
 def main(args=None):
