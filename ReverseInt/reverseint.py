@@ -1,5 +1,5 @@
 
-def reversestring(x):
+def reverseint(x):
         
         num = str(x)
         output = ""
@@ -20,7 +20,7 @@ def reversestring(x):
 
 def main(args=None):
     int = -123
-    output = reversestring(int)
+    output = reverseint(int)
 
     print(output)
 
