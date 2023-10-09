@@ -5,13 +5,13 @@ def maxdotproduct(nums, target):
         a = nums.index(target)
         output[0] = a
         nums[nums.index(target)] = -12345678
-        nums.index(target)
+        if target not in nums:
+            return [a,a]
         while target in nums:
             output[1] = nums.index(target)
             nums[nums.index(target)] = -12345678
-    else:
-        output.append(a)
-    return output
+
+        return output
 
 def main(args=None):
     nums = [5,7,7,8,8,8,10]
