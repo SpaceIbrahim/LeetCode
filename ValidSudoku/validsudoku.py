@@ -1,6 +1,6 @@
 
 def validsudoku(s):
-        
+        print("BRUH I DON'T KNOW HOW TO DO THIS")
         return True
 
 def main(args=None):
